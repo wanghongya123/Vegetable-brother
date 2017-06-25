@@ -1,0 +1,68 @@
+/*	----------------------请浮动一-----------------*/
+	.clearfix:before,.clearfix:after {       
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+	}
+
+	.clearfix { *zoom:1;}   /*这是针对于IE6的，因为IE6不支持:after伪类，这个神奇的zoom:1让IE6的元素可以清除浮动来包裹内部元素。*/
+*{margin: 0;padding: 0;border:0;}
+.warp{background-color: #f1f1f1;}
+header{overflow:hidden;}
+header .top-w{width: 100%;background-image: url("../images/top-bg_02.jpg");overflow: hidden;position: fixed;top: 0;left: 0;z-index: 1;}
+header .top{width:94.214876%;/*456/484*/margin: 0 auto;}
+header .top a{display: block;font-size: 0.75em;/*12/16*/color: #fcfcfa;line-height: 4.166666;/*50/12*/float: left;}
+header .top a:first-child{width: 53px;background: url("../images/sanjiao_03.jpg") no-repeat right center;margin-right: 33.552632%;/*153/456*/}
+header .top img{vertical-align: middle;}
+header .top>img{margin-top: 8px;}
+header .top a:last-child{float: right;}
+
+.banner{width: 100%;margin-top:50px;text-align: center;}
+.banner .img{width: 80%;margin:0 auto;margin-bottom: 8px;}
+.banner .img img{max-width: 100%;}
+
+.main{width: 100%;}
+.main-up-txt{width:100% ;background-color: #fff;padding-bottom:26px;}
+.main .main-up{width:86.363637%;margin:0 auto;}
+.main .main-up li{float: left;list-style: none;margin-top: 17px;width: 25%;}
+.main .main-up li a{text-decoration: none;display:block;width:83%;margin:0 auto;text-align: center;}
+.main .main-up li a img{max-width: 100%}
+.main .main-up li p{color:#6d6e69;font-size:14px;}
+
+.main .main-bottom-txt{width:100%;margin-top:5%;background-color: #fff;}
+.main .main-bottom{width: 92.56198%;margin:0 auto;border-top:1px solid #999;border-bottom:1px solid #999;height: 50px;position: relative;}
+.main .main-bottom > li{list-style: none;float: left;font-size:20px;width:30%;line-height: 2.5;text-align: center;color:#0bbcb4;}
+.main .main-bottom > li + li{background:url(../images/index-main-xian_08.jpg) no-repeat left center;}
+
+.main .main-bottom .main-b-xia{width:100%;padding-bottom:12%;position:absolute;top:51px;left:0px;}
+.main .main-bottom .main-b-xia li{list-style: none;border-bottom:1px dashed #999;padding-bottom:4%;}
+.main .main-bottom .main-b-xia li > a{text-decoration: none;}
+.main .main-bottom .main-b-xia li:first-child{padding-top: 30px;}
+.main .main-bottom .main-b-xia li .pic{display:block; width:25%;}
+.main .main-bottom .main-b-xia li .pic img{max-width:100%;float: left;margin-right: 13px;margin-top:15%;}
+.main .main-bottom .main-b-xia li p{text-align:left;line-height:2;font-size:16px;}
+.main .main-bottom .main-b-xia li p.p1{padding-top:4%;color:#342c37;}
+.main .main-bottom .main-b-xia li p.p2{text-decoration:line-through;color:#818489;}
+.main .main-bottom .main-b-xia li p.p3{color:#2fb78f;}
+.main .main-bottom .main-b-xia li .che{display:block;width:10%;float:right;margin: 0; }
+
+.main .main-bottom li.li2 > .main-b-xia{display:none;}
+.main .main-bottom li.li3 > .main-b-xia{display:none;}
+.main .main-bottom li:hover {color:#f27d00;}
+.main .main-bottom li:hover .main-b-xia{display:block;}
+
+
+
+
+/*.footer{width: 100%;position: fixed;bottom:0;background:url(../images/index-footer-bg_29.png);}*/
+.footer .footer-a{position:fixed;right:3%;bottom:22%; display:block;/*width: 50px;height: 50px;*/}
+.footer .footer-a img{/*width: 50px;height: 50px;*/}
+.footer{width: 100%;background: url("../images/footer-bg_22.jpg");position: fixed;bottom: 0;left: 0;}
+.footer li{width: 25%;list-style: none;float: left;text-align: center;}
+.footer li a{text-decoration: none;}
+.footer li a img{display: block;margin: 0 auto;margin-top: 6px;}
+.footer li a span{display: block;font-size: 13px;color: #39be7c;padding-top: 9px;padding-bottom: 5px;}

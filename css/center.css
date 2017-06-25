@@ -1,0 +1,54 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+.clearfix:before,
+.clearfix:after {       
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+}
+.clearfix { *zoom:1;}   /*这是针对于IE6的，因为IE6不支持:after伪类，这个神奇的zoom:1让IE6的元素可以清除浮动来包裹内部元素。*/
+body{font-size: 10px;}
+.wrap{width: 100%;background: #f1f1f1;}/*484px*/
+header{background-color: #f1f1f1;}
+header .top-w{width: 100%;background-image: url("../images/top-bg_02.jpg");overflow: hidden;position: fixed;top: 0;left: 0;z-index: 1;}
+header .top{width:94.214876%;/*456/484*/margin: 0 auto;}
+header .top a:first-child{font-size: 1.5em;/*12/16*/color: #fcfcfa;line-height: 50px;/*50/12*/float: left;text-decoration: none;}
+header .top h1{font-size: 1.125em;/*18/16*/color: #fffff6;text-align: center;line-height: 50px;/*50/18*/}
+header .top a{line-height: 50px;}
+header .top a:nth-child(2){float: right;}
+header .top a:nth-child(2) img{vertical-align: middle;}
+section{margin-top: 50px;padding-bottom: 500px;}
+.section-top{text-align: center;background: #fff;margin-bottom: 6px;}
+.section-top img{margin-top: 13px;margin-bottom: 8px;}
+.section-top p{font-size: 12px;line-height: 29px;color: #363344;}
+.section-down{background: #fff;padding: 12px 0;}
+.section-down li{list-style: none;width: 33%;float: left;text-align: center;border-right: 1px dashed #d5d5d5;}
+.section-down li a{text-decoration: none;}
+.section-down li a img{display: block;margin: 0 auto;margin-bottom: 4px;margin-top: 4px;}
+.section-down li a span{color: #04bdaf;font-size: 12px;padding-top: 4px;padding-bottom: 14px;}
+footer{width: 100%;background: url("../images/footer-bg_22.jpg");position: fixed;bottom: 0;left: 0;}
+footer li{width: 25%;list-style: none;float: left;text-align: center;}
+footer li a{text-decoration: none;}
+footer li a img{display: block;margin: 0 auto;margin-top: 6px;}
+footer li a span{display: block;font-size: 13px;color: #39be7c;padding-top: 9px;padding-bottom: 5px;}

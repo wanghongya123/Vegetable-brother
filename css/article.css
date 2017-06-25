@@ -1,0 +1,42 @@
+/*	----------------------请浮动一-----------------*/
+	.clearfix:before,.clearfix:after {       
+    content: "";     /*内容为“.”就是一个英文的句号而已。也可以不写。*/
+    display: block;   /*加入的这个元素转换为块级元素。*/
+    clear: both;     /*清除左右两边浮动。*/
+    visibility: hidden;      /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已；*/
+    line-height: 0;    /*行高为0；*/
+    height: 0;     /*高度为0；*/
+    font-size:0;    /*字体大小为0；*/
+	}
+
+	.clearfix { *zoom:1;}   /*这是针对于IE6的，因为IE6不支持:after伪类，这个神奇的zoom:1让IE6的元素可以清除浮动来包裹内部元素。*/
+*{margin: 0;padding: 0;border:0;}
+.warp{background-color: #f1f1f1;padding-bottom:35%;}
+header{overflow:hidden;}
+.top{width: 100%;background:url(../images/index_02.jpg);position: fixed;z-index: 10;}
+.top .top-txt{width:86.363637%;margin:0 auto;position:relative;text-align: center;}
+.top a{/*display:block;*/text-decoration: none;line-height:3.2;/*float: left;*/ color:#fff;}
+.top .top-a1{/*width:53px;*/color:#fff;position: absolute;left:-21px;}
+.top p{text-align: center;line-height:3.2;color:#fff;}
+.top .top-a2{display:block; position:absolute;top:5px;right:-17px;}
+
+.main{width: 100%;}
+.main .pic{width: 100%;background-color: #fff;text-align: center;}
+.main .pic img{width: 35%;margin-top: 8%;margin-bottom:5%;}
+
+.main .main-m{width: 100%;background-color: #fff;margin-top:2%;}
+.main .main-m-txt{width: 86%;margin:0 auto;}
+.main .main-m-txt p {font-size:16px;line-height: 2;}
+.main .main-m-txt .p2{color:#fb0000;}
+.main .main-m-txt p span{text-decoration:line-through;color:#848381;}
+.main .main-b{width: 100%;background-color: #fff;margin-top: 2%;} 
+.main .main-b-txt{width: 86%;margin:0 auto;}
+.main .main-b h2{color:#98958e;font-size:20px;line-height: 3;border-bottom:1px solid #d3d3d3;}
+.main .main-b ul {width: 50%;float: left;}
+.main .main-b ul li{list-style: none;line-height: 3;font-size: 13px;}
+
+
+
+.footer{width: 100%;position: fixed;bottom:0;}
+.footer  .btn1{width: 50%;float: left;color:#fff;background-color: #64ab5b;font-size: 20px;line-height:2.5;border-right:1px solid #fff;}
+.footer  .btn2{width: 50%;float: right;color:#fff;background-color:#86a883;font-size: 20px;line-height:2.5;}
